@@ -3,9 +3,13 @@
 Load the dataset to provide an overview.
 
 import pandas as pd
+
 file_path = '/mnt/data/IPL_Dataset.xlsx'
+
 xls = pd.ExcelFile(file_path)
+
 sheet_names = xls.sheet_names
+
 sheet_names
 
 Result
