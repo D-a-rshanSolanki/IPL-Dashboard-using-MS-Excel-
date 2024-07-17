@@ -20,42 +20,6 @@ The dataset contains a single sheet named "Sheet1." Let's take a look at the fir
 df = pd.read_excel(xls, sheet_name='Sheet1')
 df.head()
 
-# Result
-   id       city    Season       date player_of_match  \
-0   1  Hyderabad  IPL-2017 2017-04-05    Yuvraj Singh   
-1   2       Pune  IPL-2017 2017-04-06       SPD Smith   
-2   3     Rajkot  IPL-2017 2017-04-07         CA Lynn   
-3   4     Indore  IPL-2017 2017-04-08      GJ Maxwell   
-4   5  Bangalore  IPL-2017 2017-04-08       KM Jadhav   
-
-                                       venue                        team1  \
-0  Rajiv Gandhi International Stadium, Uppal          Sunrisers Hyderabad   
-1    Maharashtra Cricket Association Stadium               Mumbai Indians   
-2     Saurashtra Cricket Association Stadium                Gujarat Lions   
-3                     Holkar Cricket Stadium       Rising Pune Supergiant   
-4                      M Chinnaswamy Stadium  Royal Challengers Bangalore   
-
-                         team2                  toss_winner toss_decision  \
-0  Royal Challengers Bangalore  Royal Challengers Bangalore         field   
-1       Rising Pune Supergiant       Rising Pune Supergiant         field   
-2        Kolkata Knight Riders        Kolkata Knight Riders         field   
-3              Kings XI Punjab              Kings XI Punjab         field   
-4             Delhi Daredevils  Royal Challengers Bangalore           bat   
-
-   result                       winner  win_by_runs  win_by_wickets  \
-0  normal          Sunrisers Hyderabad           35               0   
-1  normal       Rising Pune Supergiant            0               7   
-2  normal        Kolkata Knight Riders            0              10   
-3  normal              Kings XI Punjab            0               6   
-4  normal  Royal Challengers Bangalore           15               0   
-
-          umpire1        umpire2  
-0     AY Dandekar       NJ Llong  
-1  A Nand Kishore         S Ravi  
-2     Nitin Menon      CK Nandan  
-3    AK Chaudhary  C Shamshuddin  
-4             NaN            NaN  
-
 Here is a preview of your IPL dataset, with the following columns:
 
 - `id`: Match identifier
