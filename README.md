@@ -1,25 +1,3 @@
-# IPL-Dashboard-using-MS-Excel-
-
-Load the dataset to provide an overview.
-
-import pandas as pd
-
-file_path = '/mnt/data/IPL_Dataset.xlsx'
-
-xls = pd.ExcelFile(file_path)
-
-sheet_names = xls.sheet_names
-
-sheet_names
-
-Result
-['Sheet1']
-
-The dataset contains a single sheet named "Sheet1." Let's take a look at the first few rows of this sheet to understand its structure and contents.
-
-df = pd.read_excel(xls, sheet_name='Sheet1')
-df.head()
-
 Here is a preview of your IPL dataset, with the following columns:
 
 - `id`: Match identifier
